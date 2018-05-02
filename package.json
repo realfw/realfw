@@ -1,0 +1,25 @@
+{
+  "name": "micro-framework",
+  "version": "1.0.0",
+  "main": "dist/micro-framework.cjs.js",
+  "module": "dist/micro-framework.esm.js",
+  "browser": "dist/micro-framework.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-latest": "^6.24.1",
+    "rollup": "^0.46.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
